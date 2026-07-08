@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FairShare – Support &amp; Datenschutz</title>
+  <meta name="description" content="Support, Hilfe und Datenschutzerklärung für die App FairShare – Gruppenausgaben fair aufteilen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0f0f13; color: #f0ece6;
+      font-family: 'DM Sans', 'Segoe UI', sans-serif;
+      line-height: 1.65; font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #4ECDC4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      background: linear-gradient(135deg, #1a1a24 0%, #0f0f13 100%);
+      border-bottom: 1px solid #2a2a36;
+      padding: 56px 0 44px; text-align: center;
+    }
+    .logo { width: 96px; height: 96px; margin: 0 auto 20px; display: block; }
+    h1 {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(30px, 6vw, 44px); letter-spacing: -0.5px;
+      background: linear-gradient(90deg, #f0ece6 30%, #4ECDC4);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: 8px;
+    }
+    header p { color: #888; font-size: 15px; }
+
+    nav {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+      padding: 20px 0; border-bottom: 1px solid #2a2a36;
+      position: sticky; top: 0; background: rgba(15,15,19,0.92);
+      backdrop-filter: blur(10px); z-index: 10;
+    }
+    nav a {
+      font-size: 13px; font-weight: 500; color: #888;
+      padding: 7px 16px; border-radius: 40px; border: 1px solid #2a2a36;
+      transition: all 0.18s;
+    }
+    nav a:hover { color: #0f0f13; background: #4ECDC4; border-color: #4ECDC4; text-decoration: none; }
+
+    section { padding: 44px 0; border-bottom: 1px solid #1e1e28; }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-family: 'Syne', sans-serif; font-weight: 700; font-size: 24px;
+      color: #4ECDC4; margin-bottom: 20px;
+    }
+    h3 {
+      font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 17px;
+      color: #f0ece6; margin: 26px 0 8px;
+    }
+    p { color: #c9c4bc; margin-bottom: 14px; font-size: 16px; }
+    ul { list-style: none; margin: 14px 0; }
+    li { color: #c9c4bc; padding: 7px 0 7px 26px; position: relative; font-size: 16px; }
+    li::before { content: '→'; position: absolute; left: 0; color: #4ECDC4; }
+
+    .steps { counter-reset: step; }
+    .steps li { padding-left: 44px; margin-bottom: 6px; }
+    .steps li::before {
+      counter-increment: step; content: counter(step);
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #4ECDC4; color: #0f0f13; font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center; top: 4px;
+    }
+
+    .email-box {
+      background: #17171f; border: 1px solid #2a2a36; border-radius: 16px;
+      padding: 24px 28px; margin-top: 8px; text-align: center;
+    }
+    .email-box .addr {
+      font-family: 'Syne', sans-serif; font-weight: 700; font-size: 20px;
+      color: #4ECDC4; word-break: break-all;
+    }
+    .email-box small { display: block; color: #666; margin-top: 8px; font-size: 13px; }
+
+    .muted { color: #666; font-size: 14px; }
+    footer { text-align: center; padding: 40px 0 60px; color: #555; font-size: 13px; }
+    footer .sep { color: #333; margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="FairShare Logo">
+      <g fill="none" stroke-width="14" stroke-linecap="round">
+        <path d="M 50 12 A 38 38 0 0 1 82.9 31" stroke="#4ECDC4"/>
+        <path d="M 82.9 69 A 38 38 0 0 1 17.1 69" stroke="#FFE66D"/>
+        <path d="M 17.1 31 A 38 38 0 0 1 50 12" stroke="#FF6B6B"/>
+      </g>
+    </svg>
+    <h1>FairShare</h1>
+    <p>Support &amp; Datenschutz</p>
+  </header>
+
+  <nav class="wrap" style="max-width:none;">
+    <a href="#hilfe">Hilfe</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#datenschutz">Datenschutz</a>
+  </nav>
+
+  <main class="wrap">
+
+    <section id="hilfe">
+      <h2>Kurzanleitung</h2>
+      <p>FairShare hilft dir, gemeinsame Ausgaben in einer Gruppe fair aufzuteilen – ob Urlaub, WG, Ausflug oder gemeinsames Essen. In drei Schritten:</p>
+      <ul class="steps">
+        <li><strong>Personen anlegen:</strong> Füge im Tab „Personen" alle Beteiligten hinzu.</li>
+        <li><strong>Ausgaben erfassen:</strong> Trage im Tab „Ausgaben" ein, was bezahlt wurde, wer bezahlt hat und wer sich die Kosten teilt.</li>
+        <li><strong>Abrechnung ansehen:</strong> Im Tab „Abrechnung" zeigt dir FairShare mit möglichst wenigen Überweisungen, wer wem was schuldet.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Häufige Fragen</h2>
+
+      <h3>Werden meine Daten irgendwo gespeichert oder hochgeladen?</h3>
+      <p>Nein. Alle Angaben bleiben ausschließlich lokal auf deinem iPhone. FairShare hat keine Server, kein Konto und keine Anmeldung – es werden keine Daten übertragen.</p>
+
+      <h3>Funktioniert die App offline?</h3>
+      <p>Ja, komplett. FairShare braucht keine Internetverbindung.</p>
+
+      <h3>Bleiben meine Eingaben erhalten, wenn ich die App schließe?</h3>
+      <p>Ja. Personen und Ausgaben werden auf dem Gerät gespeichert und sind beim nächsten Start wieder da.</p>
+
+      <h3>Wie lösche ich alle Daten wieder?</h3>
+      <p>Im Tab „Personen" findest du unten den Button „Alle Daten zurücksetzen". Damit werden alle Personen und Ausgaben unwiderruflich entfernt.</p>
+
+      <h3>Muss bei jeder Ausgabe jeder mitzahlen?</h3>
+      <p>Nein. Beim Erfassen einer Ausgabe wählst du gezielt aus, wer sich diese konkrete Ausgabe teilt. So lassen sich auch ungleiche Aufteilungen abbilden.</p>
+
+      <h3>Wie berechnet FairShare, wer wem was schuldet?</h3>
+      <p>FairShare ermittelt für jede Person den Saldo aus Gezahltem und Anteilen und schlägt dann die kleinstmögliche Anzahl an Überweisungen vor, damit alle ausgeglichen sind.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt &amp; Support</h2>
+      <p>Du hast eine Frage, einen Fehler gefunden oder einen Wunsch? Schreib mir gerne – ich antworte, sobald ich kann.</p>
+      <div class="email-box">
+        <span class="addr">neothechosenemail@gmail.com</span>
+        <small>Antwort in der Regel innerhalb weniger Tage</small>
+      </div>
+    </section>
+
+    <section id="datenschutz">
+      <h2>Datenschutzerklärung</h2>
+      <p class="muted">Stand: Juli 2026</p>
+
+      <h3>Überblick</h3>
+      <p>FairShare wurde so entwickelt, dass es ohne die Erhebung personenbezogener Daten auskommt. Die App erhebt, speichert und überträgt keine personenbezogenen Daten an den Anbieter oder an Dritte.</p>
+
+      <h3>Welche Daten verarbeitet die App?</h3>
+      <p>Die von dir eingegebenen Inhalte (Namen von Personen sowie Beträge und Beschreibungen von Ausgaben) werden ausschließlich lokal auf deinem Gerät gespeichert. Diese Daten verlassen dein Gerät nicht und sind für den Anbieter zu keinem Zeitpunkt einsehbar.</p>
+
+      <h3>Keine Datenerhebung</h3>
+      <p>FairShare verwendet keine Konten, keine Anmeldung, kein Tracking, keine Analyse-Werkzeuge und keine Werbung. Es werden keine Nutzungsdaten, Standortdaten oder Gerätekennungen erfasst.</p>
+
+      <h3>Keine Weitergabe an Dritte</h3>
+      <p>Da keine Daten erhoben werden, findet auch keine Weitergabe an Dritte statt.</p>
+
+      <h3>Löschung</h3>
+      <p>Du kannst alle in der App gespeicherten Inhalte jederzeit selbst löschen – über die Funktion „Alle Daten zurücksetzen" oder durch Deinstallation der App.</p>
+
+      <h3>Verantwortlicher</h3>
+      <p>Caspar Tietmeyer<br />Kontakt: <a href="mailto:neothechosenemail@gmail.com">neothechosenemail@gmail.com</a></p>
+
+      <h3>Änderungen</h3>
+      <p>Sollte sich diese Datenschutzerklärung ändern, wird die aktualisierte Fassung an dieser Stelle veröffentlicht.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Caspar Tietmeyer</span>
+    <span class="sep">·</span>
+    <span>FairShare</span>
+  </footer>
+
+</body>
+</html>
